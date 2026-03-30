@@ -34,6 +34,10 @@ ul{list-style:none}
 .sh.dark h2::before,.sh.dark h2::after{background:rgba(0,0,0,.18)}
 .sh.dark p{color:#777}
 
+.sh1{
+  color:var(--white)
+}
+
 /* ───── NAVBAR ───── */
 .nav{
   position:fixed;inset:0 0 auto 0;z-index:1000;
