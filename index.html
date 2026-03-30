@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Bruno Mariano Silva | Sites que Vendem de Verdade</title>
 
@@ -12,7 +12,7 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.brunomarianosilva.com.br/">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.brunomarianosilva.com.br/">
   <meta property="og:title" content="Bruno Mariano Silva | Sites que Vendem de Verdade">
@@ -26,7 +26,7 @@
   <meta property="twitter:description" content="Criação de sites e landing pages de alto padrão focadas em conversão.">
   <meta property="twitter:image" content="https://www.brunomarianosilva.com.br/img/foto__perfil.jpg">
 
-  <!-- Google Ads & Analytics -->
+  <!-- Google Ads / Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -40,18 +40,29 @@
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  if(!f._fbq)f._fbq=n;
+  n.push=n;
+  n.loaded=!0;
+  n.version='2.0';
+  n.queue=[];
+  t=b.createElement(e);
+  t.async=!0;
+  t.src=v;
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)
+  }(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', 'YOUR_PIXEL_ID');
+
+  fbq('init', '1382903480259451');
   fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
 
-  <!-- JSON-LD -->
+  <noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1382903480259451&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -94,674 +105,310 @@
   <link rel="shortcut icon" href="img/favicon.ico">
   <meta name="theme-color" content="#0066CC">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- Frameworks -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- ======================================================
-       HEADER
-  ====================================================== -->
-  <header class="header-sticky">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#home">
-          <img src="img/bruno__logo.svg" alt="Bruno Mariano Silva" class="logo-img">
+  <nav class="nav" id="nav">
+    <div class="wrap">
+      <div class="nav-in">
+        <a href="#home" class="nav-logo">Bruno.</a>
+        <ul class="nav-ul">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#works">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <a href="https://wa.me/5547991597258" target="_blank" class="nav-btn">
+          <i class="bi bi-whatsapp"></i> Orçamento
         </a>
+        <button class="hbg" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
 
-        <button class="navbar-toggler border-0 shadow-none" type="button"
-          data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
-          <div class="hamburger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </button>
+  <div class="drawer" id="drawer">
+    <a href="#home">Home</a>
+    <a href="#about">Sobre</a>
+    <a href="#services">Serviços</a>
+    <a href="#works">Projetos</a>
+    <a href="#reviews">Depoimentos</a>
+    <a href="#contact">Contato</a>
+  </div>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto align-items-center">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-            <li class="nav-item"><a class="nav-link" href="#galeria">Projetos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            <li class="nav-item ms-lg-3">
-              <a href="https://wa.me/5547991597258?text=Olá%2C+quero+um+orçamento!" class="btn-nav-cta" target="_blank" rel="noopener">
-                <i class="bi bi-whatsapp me-1"></i> Orçamento Grátis
-              </a>
-            </li>
-          </ul>
+  <header id="home" class="hero">
+    <div class="hm hm-tl"><div class="hm-ph"><i class="bi bi-laptop"></i></div></div>
+    <div class="hm hm-tr"><div class="hm-ph"><i class="bi bi-phone"></i></div></div>
+    <div class="hm hm-bl"><div class="hm-ph"><i class="bi bi-code-slash"></i></div></div>
+    <div class="hm hm-br"><div class="hm-ph"><i class="bi bi-graph-up-arrow"></i></div></div>
+
+    <div class="wrap">
+      <div class="hero-c">
+        <div class="hero-av">
+          <img src="img/foto__perfil.jpg" alt="Bruno Mariano Silva" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <i class="bi bi-person-circle" style="display:none"></i>
+        </div>
+        <p class="h-greet">Especialista em Conversão</p>
+        <h1 class="h-name">Transformando cliques em <em>clientes reais.</em></h1>
+        <p class="h-role">Sites de Alto Padrão &amp; Landing Pages</p>
+        <a href="#contact" class="h-btn">Começar meu projeto <i class="bi bi-arrow-right"></i></a>
+
+        <div class="h-stats">
+          <div class="h-stat"><strong>+50</strong><span>Projetos</span></div>
+          <div class="h-sep"></div>
+          <div class="h-stat"><strong>100%</strong><span>Foco em ROI</span></div>
         </div>
       </div>
-    </nav>
+    </div>
   </header>
 
-  <main>
-
-    <!-- ======================================================
-         HERO SECTION
-    ====================================================== -->
-    <section id="home" class="hero-section">
-      <div class="container">
-        <div class="row align-items-center g-4 g-lg-5">
-
-          <div class="col-lg-6 hero-text-col" data-aos="fade-right">
-            <span class="hero-badge">
-              <i class="bi bi-patch-check-fill me-1"></i> Especialista em Sites que Convertem
-            </span>
-            <h1 class="hero-title">
-              Seu negócio merece um site que <span class="text-primary">trabalha por você</span> 24 horas por dia.
-            </h1>
-            <p class="hero-lead">
-              Crio sites e landing pages de alto padrão que atraem clientes pelo Google e WhatsApp com design profissional, carregamento rápido e copy focada em vendas.
-            </p>
-
-            <div class="hero-social-proof">
-              <div class="proof-item">
-                <strong>+20</strong>
-                <span>Projetos entregues</span>
-              </div>
-              <div class="proof-divider"></div>
-              <div class="proof-item">
-                <strong>100%</strong>
-                <span>Clientes satisfeitos</span>
-              </div>
-              <div class="proof-divider"></div>
-              <div class="proof-item">
-                <strong>48h</strong>
-                <span>Prazo de resposta</span>
-              </div>
-            </div>
-
-            <div class="hero-cta-group">
-              <a href="https://wa.me/5547991597258?text=Olá%2C+quero+um+orçamento+gratuito!" class="btn-premium btn-premium-primary" target="_blank" rel="noopener">
-                <i class="bi bi-whatsapp"></i> Quero meu site agora
-              </a>
-              <a href="#galeria" class="btn-premium btn-premium-outline">
-                Ver Portfólio
-              </a>
-            </div>
-
-            <p class="hero-guarantee">
-              <i class="bi bi-shield-check text-primary me-1"></i>
-              Orçamento gratuito e sem compromisso. Respondo em até 2 horas.
-            </p>
+  <section id="about" class="about">
+    <div class="wrap">
+      <div class="ab-g">
+        <div data-r>
+          <p class="ab-tag">Quem é <b>Bruno Mariano Silva</b></p>
+          <h2 class="ab-title">Estrategista Digital focado em resultados tangíveis.</h2>
+          <p class="ab-p">Com anos de experiência no mercado digital, entendi que um site bonito não basta. Ele precisa ser uma máquina de vendas eficiente.</p>
+          <p class="ab-p">Minha missão é elevar o patamar da sua empresa, criando uma presença digital que transmite autoridade e converte visitantes em clientes fiéis.</p>
+          <div class="ab-social">
+            <a href="https://www.instagram.com/modowebonline/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/5547991597258" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="mailto:brunomariano.sv@gmail.com" aria-label="E-mail"><i class="bi bi-envelope-fill"></i></a>
           </div>
-
-          <div class="col-lg-6 hero-img-col" data-aos="fade-left">
-            <div class="hero-image-container">
-              <img src="img/foto__perfil.jpg" alt="Bruno Mariano Silva - Desenvolvedor Web" class="hero-img">
-              <div class="hero-float-badge">
-                <i class="bi bi-star-fill text-warning"></i>
-                <div>
-                  <strong>Entrega rápida</strong>
-                  <small>Em até 7 dias úteis</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        </div>
+        <div class="ab-img" data-r data-d="2">
+          <img src="img/foto__perfil.jpg" alt="Sobre Bruno" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ab-ph" style="display:none"><i class="bi bi-camera-fill"></i><span>Sua Foto Aqui</span></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ======================================================
-         TRUST BAR
-    ====================================================== -->
-    <section class="trust-bar-section" data-aos="fade-up">
-      <div class="container">
-        <div class="trust-bar">
-          <div class="trust-item">
-            <i class="bi bi-lightning-charge-fill"></i>
-            <span>Sites ultrarrápidos</span>
-          </div>
-          <div class="trust-item">
-            <i class="bi bi-phone-fill"></i>
-            <span>100% responsivo</span>
-          </div>
-          <div class="trust-item">
-            <i class="bi bi-graph-up-arrow"></i>
-            <span>SEO otimizado</span>
-          </div>
-          <div class="trust-item">
-            <i class="bi bi-whatsapp"></i>
-            <span>Integração WhatsApp</span>
-          </div>
-          <div class="trust-item">
-            <i class="bi bi-google"></i>
-            <span>Google Meu Negócio</span>
-          </div>
-          <div class="trust-item">
-            <i class="bi bi-headset"></i>
-            <span>Suporte pós-entrega</span>
-          </div>
+  <section id="services" class="svc">
+    <div class="wrap">
+      <div class="sh" data-r>
+        <h2>Meus Serviços</h2>
+        <p>Soluções completas para quem não aceita ser apenas "mais um" na internet.</p>
+      </div>
+      <div class="svc-g">
+        <div class="svc-c" data-r data-d="1">
+          <div class="svc-ico"><i class="bi bi-lightning-charge-fill"></i></div>
+          <h3>Landing Pages</h3>
+          <p>Páginas de venda ultra-otimizadas para campanhas de tráfego pago. Foco total em conversão e velocidade.</p>
+          <div class="svc-price">Investimento a partir de <strong>R$ 800</strong></div>
+        </div>
+        <div class="svc-c" data-r data-d="2">
+          <div class="svc-ico"><i class="bi bi-buildings-fill"></i></div>
+          <h3>Sites Institucionais</h3>
+          <p>A vitrine digital de luxo para sua empresa. Design exclusivo que gera autoridade e confiança imediata.</p>
+          <div class="svc-price">Investimento a partir de <strong>R$ 1.500</strong></div>
+        </div>
+        <div class="svc-c" data-r data-d="3">
+          <div class="svc-ico"><i class="bi bi-gear-wide-connected"></i></div>
+          <h3>Suporte &amp; Manutenção</h3>
+          <p>Sua paz de espírito garantida. Cuidamos de atualizações, segurança e melhorias contínuas no seu site.</p>
+          <div class="svc-price">Planos mensais a partir de <strong>R$ 150</strong></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ======================================================
-         SERVIÇOS
-    ====================================================== -->
-    <section id="servicos" class="bg-light">
-      <div class="container">
-        <div class="section-title-wrapper text-center" data-aos="fade-up">
-          <span class="section-label">O que eu faço</span>
-          <h2 class="display-5 mb-3">Soluções <span class="text-primary">sob medida</span> para o seu negócio</h2>
-          <p class="section-subtitle mx-auto">Cada projeto é desenvolvido com foco total em atrair, convencer e converter visitantes em clientes reais.</p>
-        </div>
-
-        <div class="row g-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-premium">
-              <div class="icon-box">
-                <i class="bi bi-lightning-charge"></i>
-              </div>
-              <h3>Landing Pages Estratégicas</h3>
-              <p>Uma página poderosa criada para transformar visitantes em clientes. Ideal para quem quer resultado rápido com Google Ads, Meta Ads ou tráfego orgânico.</p>
-              <ul class="list-unstyled feature-list mt-3 mb-4">
-                <li><i class="bi bi-check2-circle text-primary"></i> Copy focada em conversão</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> Design moderno e profissional</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> Integração com Google Meu Negócio</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> CTA estratégico em toda a página</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> Integração com redes sociais</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> 100% responsivo para celular</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> SEO inicial configurado</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> Opção de hospedagem gratuita</li>
-              </ul>
-              <div class="card-price">
-                <span class="price-label">A partir de</span>
-                <span class="price-value">R$ 500</span>
-              </div>
-              <a href="https://wa.me/5547991597258?text=Tenho+interesse+em+uma+Landing+Page"
-                class="btn-premium btn-premium-primary w-100 mt-3" target="_blank" rel="noopener">
-                Quero mais clientes
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-premium card-premium-featured">
-              <div class="card-featured-badge">Mais Procurado</div>
-              <div class="icon-box icon-box-primary">
-                <i class="bi bi-briefcase"></i>
-              </div>
-              <h3>Site Institucional Profissional</h3>
-              <p>Estrutura completa para empresas que querem fortalecer a marca, transmitir autoridade e gerar mais oportunidades de negócio online.</p>
-              <ul class="list-unstyled feature-list mt-3 mb-4">
-                <li><i class="bi bi-check2-circle text-primary"></i> Até 7 páginas internas</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> Copy focada em conversão</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> Design moderno e profissional</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> Estrutura otimizada para WhatsApp</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> Integração com Google Meu Negócio</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> CTA estratégico em toda a página</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> 100% responsivo para celular</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> SEO inicial configurado</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> Opção de hospedagem gratuita</li>
-              </ul>
-              <div class="card-price">
-                <span class="price-label">A partir de</span>
-                <span class="price-value">R$ 1.000</span>
-              </div>
-              <a href="https://wa.me/5547991597258?text=Tenho+interesse+em+um+Site+Institucional"
-                class="btn-premium btn-premium-primary w-100 mt-3" target="_blank" rel="noopener">
-                Falar com especialista
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mx-auto" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-premium">
-              <div class="icon-box">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <h3>Manutenção e Suporte</h3>
-              <p>Segurança, atualizações e suporte contínuo para manter seu site sempre no ar, seguro e funcionando perfeitamente.</p>
-              <ul class="list-unstyled feature-list mt-3 mb-3">
-                <li><i class="bi bi-check2-circle text-primary"></i> Backup periódico</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> Atualizações técnicas</li>
-                <li><i class="bi bi-check2-circle text-primary"></i> Suporte via WhatsApp</li>
-              </ul>
-              <div class="manutencao-planos">
-                <div class="plano-item">
-                  <span class="plano-nome">Mensal</span>
-                  <span class="plano-preco">R$ 150</span>
-                </div>
-                <div class="plano-item">
-                  <span class="plano-nome">Trimestral</span>
-                  <span class="plano-preco">R$ 420 <small>(-R$ 30)</small></span>
-                </div>
-                <div class="plano-item">
-                  <span class="plano-nome">Semestral</span>
-                  <span class="plano-preco">R$ 810 <small>(-R$ 90)</small></span>
-                </div>
-                <div class="plano-item plano-destaque">
-                  <span class="plano-nome">Anual <span class="badge-melhor">Melhor custo</span></span>
-                  <span class="plano-preco text-primary">R$ 1.500</span>
-                </div>
-              </div>
-              <a href="https://wa.me/5547991597258?text=Tenho+interesse+em+Manutenção+e+Suporte"
-                class="btn-premium btn-premium-primary w-100 mt-3" target="_blank" rel="noopener">
-                Contratar manutenção
-              </a>
-            </div>
-          </div>
-
-        </div>
+  <section id="works" class="work">
+    <div class="wrap">
+      <div class="sh" data-r>
+        <h2>Projetos Recentes</h2>
+        <p>Uma pequena amostra do que entregamos para nossos parceiros de negócio.</p>
       </div>
-    </section>
-
-    <!-- ======================================================
-         COMO FUNCIONA
-    ====================================================== -->
-    <section id="como-funciona" class="como-funciona-section">
-      <div class="container">
-        <div class="section-title-wrapper text-center" data-aos="fade-up">
-          <span class="section-label">Processo simples</span>
-          <h2 class="display-5 mb-3">Do zero ao seu site em <span class="text-primary">4 passos</span></h2>
-          <p class="section-subtitle mx-auto">Sem complicação, sem enrolação. Você foca no seu negócio e eu cuido de tudo.</p>
+      <div class="ftabs" data-r>
+        <button class="ft on" data-f="all">Todos</button>
+        <button class="ft" data-f="landing">Landing Pages</button>
+        <button class="ft" data-f="institucional">Institucionais</button>
+      </div>
+      <div class="wg">
+        <!-- Card 1 -->
+        <div class="project-card-v2" data-cat="landing" data-r data-d="1">
+          <div class="project-preview-v2">
+            <img src="img/fritz_higienizacao.png" alt="Fritz Higienização" class="project-image-v2"
+                onerror="this.parentNode.innerHTML='<div class=\'w-ph\'><i class=\'bi bi-image\'></i><span>Fritz Higienização</span></div>'">
+          </div>
+          <div class="project-content-v2">
+            <div class="w-cat">Landing Page · Serviços Locais</div>
+            <h3 class="w-title">Fritz Higienização</h3>
+            <p class="project-desc-v2">Landing page otimizada para conversão e captação de leads via tráfego pago.</p>
+            <a href="https://fritzhigienizacao.com.br/" target="_blank" class="project-link-v2">Ver site ao vivo <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
         </div>
-        <div class="row g-4 g-lg-5">
-          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="step-card">
-              <div class="step-number">01</div>
-              <i class="bi bi-chat-dots step-icon"></i>
-              <h4>Conversa inicial</h4>
-              <p>Você me conta sobre o seu negócio e objetivos. Faço um diagnóstico gratuito da sua presença digital.</p>
-            </div>
+
+        <!-- Card 2 -->
+        <div class="project-card-v2" data-cat="institucional" data-r data-d="2">
+          <div class="project-preview-v2">
+            <img src="img/cladia_contabilidade.png" alt="Cladia Contabilidade" class="project-image-v2"
+                onerror="this.parentNode.innerHTML='<div class=\'w-ph\'><i class=\'bi bi-image\'></i><span>Cladia Contabilidade</span></div>'">
           </div>
-          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="step-card">
-              <div class="step-number">02</div>
-              <i class="bi bi-pencil-square step-icon"></i>
-              <h4>Proposta personalizada</h4>
-              <p>Apresento um orçamento claro e sem surpresas, com prazo de entrega definido.</p>
-            </div>
+          <div class="project-content-v2">
+            <div class="w-cat">Institucional · Contabilidade</div>
+            <h3 class="w-title">Cladia Contabilidade</h3>
+            <p class="project-desc-v2">Site institucional moderno com foco em autoridade e clareza de informações.</p>
+            <a href="https://claudialvescontabil.vercel.app/" target="_blank" class="project-link-v2">Ver site ao vivo <i class="bi bi-box-arrow-up-right"></i></a>
           </div>
-          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="step-card">
-              <div class="step-number">03</div>
-              <i class="bi bi-code-slash step-icon"></i>
-              <h4>Desenvolvimento</h4>
-              <p>Desenvolvo seu site com design premium, responsivo e otimizado para converter visitantes em clientes.</p>
-            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card-v2" data-cat="landing" data-r data-d="3">
+          <div class="project-preview-v2">
+            <img src="img/clean_higienizacao.png" alt="Clean Higienização" class="project-image-v2"
+                onerror="this.parentNode.innerHTML='<div class=\'w-ph\'><i class=\'bi bi-image\'></i><span>Clean Higienização</span></div>'">
           </div>
-          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="step-card">
-              <div class="step-number">04</div>
-              <i class="bi bi-rocket-takeoff step-icon"></i>
-              <h4>Entrega e Suporte</h4>
-              <p>Seu site vai ao ar e você recebe suporte pós-entrega para garantir que tudo funcione perfeitamente.</p>
-            </div>
+          <div class="project-content-v2">
+            <div class="w-cat">Landing Page · Serviços Locais</div>
+            <h3 class="w-title">Clean Higienização</h3>
+            <p class="project-desc-v2">Design focado em agendamento rápido e exposição de serviços especializados.</p>
+            <a href="https://gocleanhigienizacao.vercel.app/" target="_blank" class="project-link-v2">Ver site ao vivo <i class="bi bi-box-arrow-up-right"></i></a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ======================================================
-         PORTFÓLIO
-    ====================================================== -->
-    <section id="galeria" class="bg-light">
-      <div class="container">
-        <div class="section-title-wrapper text-center" data-aos="fade-up">
-          <span class="section-label">Portfólio</span>
-          <h2 class="display-5 mb-3">Projetos que <span class="text-primary">geram resultados</span></h2>
-          <p class="section-subtitle mx-auto">Uma seleção de trabalhos reais entregues para negócios de diferentes segmentos.</p>
-        </div>
-
-        <div class="gallery-grid">
-
-          <div class="project-card" data-aos="fade-up">
-            <div class="project-img-wrapper">
-              <img src="img/google__image.jpg" alt="Fritz Higienização - Landing Page" class="project-img" loading="lazy">
-              <div class="project-overlay">
-                <a href="https://fritzhigienizacao.com.br/" target="_blank" rel="noopener" class="overlay-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> Ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-tag">Serviços Locais</span>
-              <h3 class="project-title">Fritz Higienização</h3>
-              <p class="project-desc">Landing page de alta conversão para serviços de limpeza e higienização, com foco em captação de leads pelo WhatsApp e Google.</p>
-              <a href="https://fritzhigienizacao.com.br/" target="_blank" rel="noopener" class="project-link">Ver Projeto <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="project-img-wrapper">
-              <img src="img/banner-contabilidade.jpg" alt="Amilton Contabilidade - Site Institucional" class="project-img" loading="lazy">
-              <div class="project-overlay">
-                <a href="https://amiltoncontabilidade.netlify.app/" target="_blank" rel="noopener" class="overlay-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> Ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-tag">Institucional</span>
-              <h3 class="project-title">Amilton Contabilidade</h3>
-              <p class="project-desc">Site institucional completo para escritório de contabilidade, transmitindo autoridade e gerando contatos qualificados.</p>
-              <a href="https://amiltoncontabilidade.netlify.app/" target="_blank" rel="noopener" class="project-link">Ver Projeto <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-img-wrapper">
-              <img src="img/banner-estetica-dental.jpg" alt="Estética Dental - Landing Page" class="project-img" loading="lazy">
-              <div class="project-overlay">
-                <a href="https://lentesderesinadental.netlify.app/" target="_blank" rel="noopener" class="overlay-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> Ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-tag">Landing Page</span>
-              <h3 class="project-title">Estética Dental</h3>
-              <p class="project-desc">Página de captura premium para procedimentos odontológicos de alto valor, com copy persuasiva e design elegante.</p>
-              <a href="https://lentesderesinadental.netlify.app/" target="_blank" rel="noopener" class="project-link">Ver Projeto <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="project-img-wrapper">
-              <img src="img/barbearia.jpg" alt="Barbearia Premium - Landing Page" class="project-img" loading="lazy">
-              <div class="project-overlay">
-                <a href="https://osdabarbearia.netlify.app/" target="_blank" rel="noopener" class="overlay-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> Ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-tag">Landing Page</span>
-              <h3 class="project-title">Barbearia Premium</h3>
-              <p class="project-desc">Design moderno e funcional para barbearia, com agendamento online integrado e foco em atrair novos clientes.</p>
-              <a href="https://osdabarbearia.netlify.app/" target="_blank" rel="noopener" class="project-link">Ver Projeto <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="project-img-wrapper">
-              <img src="img/gustavo-silva.jpg" alt="Tráfego e Social Mídia - Landing Page" class="project-img" loading="lazy">
-              <div class="project-overlay">
-                <a href="https://gustavosilvadesign.netlify.app/" target="_blank" rel="noopener" class="overlay-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> Ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-tag">Landing Page</span>
-              <h3 class="project-title">Tráfego e Social Mídia</h3>
-              <p class="project-desc">Landing page profissional para gestor de tráfego, com posicionamento de autoridade e captação de leads qualificados.</p>
-              <a href="https://gustavosilvadesign.netlify.app/" target="_blank" rel="noopener" class="project-link">Ver Projeto <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-img-wrapper">
-              <img src="img/banner-dentaria.jpg" alt="Clínica Dentária - Landing Page" class="project-img" loading="lazy">
-              <div class="project-overlay">
-                <a href="https://karinaclinicadentaria.netlify.app/" target="_blank" rel="noopener" class="overlay-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> Ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-tag">Landing Page</span>
-              <h3 class="project-title">Clínica Dentária</h3>
-              <p class="project-desc">Design moderno e sofisticado para clínica odontológica, transmitindo confiança e convertendo visitas em consultas agendadas.</p>
-              <a href="https://karinaclinicadentaria.netlify.app/" target="_blank" rel="noopener" class="project-link">Ver Projeto <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="project-img-wrapper">
-              <img src="img/banner-ribeiros.jpg" alt="Distribuidora e Logística - Landing Page" class="project-img" loading="lazy">
-              <div class="project-overlay">
-                <a href="https://ribeirosdistribuidora.netlify.app/" target="_blank" rel="noopener" class="overlay-btn">
-                  <i class="bi bi-box-arrow-up-right"></i> Ver ao vivo
-                </a>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-tag">Landing Page</span>
-              <h3 class="project-title">Distribuidora e Logística</h3>
-              <p class="project-desc">Presença digital profissional para distribuidora, com foco em gerar orçamentos e fortalecer a credibilidade da empresa.</p>
-              <a href="https://ribeirosdistribuidora.netlify.app/" target="_blank" rel="noopener" class="project-link">Ver Projeto <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-        </div>
+  <section id="reviews" class="rev">
+    <div class="wrap">
+      <div class="sh" data-r>
+        <h2>Depoimentos</h2>
+        <p>Resultados reais de quem apostou em uma presença digital profissional.</p>
       </div>
-    </section>
-
-    <!-- ======================================================
-         DEPOIMENTOS
-    ====================================================== -->
-    <section id="depoimentos" class="depoimentos-section">
-      <div class="container">
-        <div class="section-title-wrapper text-center" data-aos="fade-up">
-          <span class="section-label">Depoimentos</span>
-          <h2 class="display-5 mb-3">O que dizem os <span class="text-primary">clientes</span></h2>
-          <p class="section-subtitle mx-auto">Resultados reais de quem apostou em uma presença digital profissional.</p>
+      <div class="rv-g">
+        <div class="rv-c" data-r data-d="1">
+          <div class="rv-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="rv-txt">"O Bruno entregou exatamente o que eu precisava. Minha landing page ficou incrível e já recebi vários contatos pelo WhatsApp logo na primeira semana!"</p>
+          <div class="rv-auth">
+            <div class="rv-av">F</div>
+            <div><div class="rv-name">Fritz Higienização</div><div class="rv-role">Serviços de Limpeza</div></div>
+          </div>
         </div>
-        <div class="row g-4">
-
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="depoimento-card">
-              <div class="depoimento-stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p class="depoimento-texto">"O Bruno entregou exatamente o que eu precisava. Minha landing page ficou incrível e já recebi vários contatos pelo WhatsApp logo na primeira semana!"</p>
-              <div class="depoimento-autor">
-                <div class="autor-avatar">F</div>
-                <div>
-                  <strong>Fritz Higienização</strong>
-                  <small>Serviços de Limpeza</small>
-                </div>
-              </div>
-            </div>
+        <div class="rv-c" data-r data-d="2">
+          <div class="rv-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="rv-txt">"Profissional sério, pontual e com muito talento. O site ficou moderno, carrega rápido e transmite a credibilidade que minha empresa precisava."</p>
+          <div class="rv-auth">
+            <div class="rv-av">A</div>
+            <div><div class="rv-name">Amilton Contabilidade</div><div class="rv-role">Escritório Contábil</div></div>
           </div>
-
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="depoimento-card">
-              <div class="depoimento-stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p class="depoimento-texto">"Profissional sério, pontual e com muito talento. O site ficou moderno, carrega rápido e transmite a credibilidade que minha empresa precisava."</p>
-              <div class="depoimento-autor">
-                <div class="autor-avatar">A</div>
-                <div>
-                  <strong>Amilton Contabilidade</strong>
-                  <small>Escritório Contábil</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mx-auto" data-aos="fade-up" data-aos-delay="300">
-            <div class="depoimento-card">
-              <div class="depoimento-stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p class="depoimento-texto">"Superou minhas expectativas! O design ficou elegante, a página carrega super rápido e os clientes elogiam muito. Recomendo sem hesitar."</p>
-              <div class="depoimento-autor">
-                <div class="autor-avatar">K</div>
-                <div>
-                  <strong>Karina Clínica Dentária</strong>
-                  <small>Odontologia</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
-
-    <!-- ======================================================
-         CTA FINAL
-    ====================================================== -->
-    <section id="contato" class="bg-primary">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-8" data-aos="fade-up">
-            <span class="cta-badge">Vagas limitadas por mês</span>
-            <h2 class="cta-title">Pronto para ter um site que <strong>realmente vende?</strong></h2>
-            <p class="cta-subtitle">Solicite agora um diagnóstico gratuito da sua presença digital. Sem complicação, sem enrolação só resultados.</p>
-
-            <div class="cta-btn-group">
-              <a href="https://wa.me/5547991597258?text=Olá+Bruno%2C+quero+um+diagnóstico+gratuito+do+meu+negócio!" class="btn-premium btn-premium-success btn-cta-lg" target="_blank" rel="noopener">
-                <i class="bi bi-whatsapp"></i> Falar no WhatsApp agora
-              </a>
-              <a href="https://www.instagram.com/modowebonline/" class="btn-premium btn-cta-outline btn-cta-lg" target="_blank" rel="noopener">
-                <i class="bi bi-instagram"></i> Ver no Instagram
-              </a>
-            </div>
-
-            <div class="cta-garantias">
-              <span><i class="bi bi-check-circle-fill"></i> Orçamento 100% gratuito</span>
-              <span><i class="bi bi-check-circle-fill"></i> Resposta em até 2 horas</span>
-              <span><i class="bi bi-check-circle-fill"></i> Sem taxa de cancelamento</span>
-            </div>
+        <div class="rv-c" data-r data-d="3">
+          <div class="rv-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="rv-txt">"Superou minhas expectativas! O design ficou elegante, a página carrega super rápido e os clientes elogiam muito. Recomendo sem hesitar."</p>
+          <div class="rv-auth">
+            <div class="rv-av">K</div>
+            <div><div class="rv-name">Karina Clínica Dentária</div><div class="rv-role">Odontologia</div></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
-
-  <!-- ======================================================
-       FOOTER
-  ====================================================== -->
-  <footer class="footer-premium">
-    <div class="container">
-      <div class="row g-4 g-lg-5 mb-5">
-
-        <div class="col-lg-4">
-          <a class="navbar-brand d-flex align-items-center mb-4" href="#home">
-            <img src="img/bruno__logo1.svg" alt="Bruno Mariano Silva" class="logo-img">
-          </a>
-          <p class="text-white-50">Especialista em desenvolvimento web de alto padrão, focado em transformar negócios através do design e tecnologia.</p>
-          <div class="footer-social mt-4">
-            <a href="https://www.instagram.com/modowebonline/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://wa.me/5547991597258" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
-              <i class="bi bi-whatsapp"></i>
-            </a>
+  <section id="contact" class="ctc">
+    <div class="wrap">
+      <div class="sh" data-r>
+        <h2>Fale Comigo</h2>
+        <p>Tem um projeto em mente? Vamos conversar — ofereço diagnóstico gratuito da sua presença digital.</p>
+      </div>
+      <div class="ctc-g">
+        <div data-r>
+          <h3 class="ctc-h3">Informações de contato</h3>
+          <p class="ctc-p">Respondo rapidamente pelo WhatsApp ou e-mail. Sem enrolação, direto ao ponto.</p>
+          <div class="ctc-row">
+            <div class="ctc-ico"><i class="bi bi-geo-alt-fill"></i></div>
+            <div><div class="ctc-lbl">Localização</div><div class="ctc-val">Santa Catarina, Brasil</div></div>
+          </div>
+          <div class="ctc-row">
+            <div class="ctc-ico"><i class="bi bi-whatsapp"></i></div>
+            <div><div class="ctc-lbl">WhatsApp</div><a href="https://wa.me/5547991597258" target="_blank" class="ctc-val">(47) 99159-7258</a></div>
+          </div>
+          <div class="ctc-row">
+            <div class="ctc-ico"><i class="bi bi-envelope-fill"></i></div>
+            <div><div class="ctc-lbl">E-mail</div><a href="mailto:brunomariano.sv@gmail.com" class="ctc-val">brunomariano.sv@gmail.com</a></div>
+          </div>
+          <div class="ctc-row">
+            <div class="ctc-ico"><i class="bi bi-instagram"></i></div>
+            <div><div class="ctc-lbl">Instagram</div><a href="https://www.instagram.com/modowebonline/" target="_blank" class="ctc-val">@modowebonline</a></div>
           </div>
         </div>
+        <form class="cf" data-r data-d="2" onsubmit="sendForm(event)">
+          <div class="cf-row">
+            <div class="cf-f"><label>Seu nome</label><input type="text" id="fn" placeholder="João Silva"></div>
+            <div class="cf-f"><label>Seu e-mail</label><input type="email" id="fe" placeholder="joao@email.com"></div>
+          </div>
+          <div class="cf-f"><label>Assunto</label><input type="text" id="fs" placeholder="Quero um orçamento para..."></div>
+          <div class="cf-f"><label>Mensagem</label><textarea id="fm" rows="5" placeholder="Conte-me sobre seu projeto..."></textarea></div>
+          <button type="submit" class="cf-btn"><i class="bi bi-send-fill"></i> Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-        <div class="col-6 col-lg-2">
-          <h5 class="mb-4">Links</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="#home" class="footer-link">Home</a></li>
-            <li class="mb-2"><a href="#servicos" class="footer-link">Serviços</a></li>
-            <li class="mb-2"><a href="#galeria" class="footer-link">Projetos</a></li>
-            <li class="mb-2"><a href="#depoimentos" class="footer-link">Depoimentos</a></li>
-            <li class="mb-2"><a href="#contato" class="footer-link">Contato</a></li>
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="ftr-g">
+        <div>
+          <div class="ftr-logo">Bruno.</div>
+          <p class="ftr-desc">Especialista em desenvolvimento web de alto padrão, focado em transformar negócios através de design e tecnologia.</p>
+          <div class="ftr-soc">
+            <a href="https://www.instagram.com/modowebonline/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/5547991597258" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="ftr-col">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#works">Projetos</a></li>
+            <li><a href="#reviews">Depoimentos</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
-
-        <div class="col-6 col-lg-3">
-          <h5 class="mb-4">Serviços</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="#servicos" class="footer-link">Landing Pages</a></li>
-            <li class="mb-2"><a href="#servicos" class="footer-link">Sites Institucionais</a></li>
-            <li class="mb-2"><a href="#servicos" class="footer-link">Manutenção e Suporte</a></li>
+        <div class="ftr-col">
+          <h5>Serviços</h5>
+          <ul>
+            <li><a href="#services">Landing Pages</a></li>
+            <li><a href="#services">Sites Institucionais</a></li>
+            <li><a href="#services">Manutenção</a></li>
+            <li><a href="#services">SEO &amp; Performance</a></li>
           </ul>
         </div>
-
-        <div class="col-lg-3">
-          <h5 class="mb-4">Contato</h5>
-          <p class="text-white-50 mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> Santa Catarina, Brasil</p>
-          <p class="text-white-50 mb-2"><i class="bi bi-whatsapp text-primary me-2"></i> (47) 99159-7258</p>
-          <p class="text-white-50"><i class="bi bi-envelope text-primary me-2"></i> brunomariano.sv@gmail.com</p>
+        <div class="ftr-col">
+          <h5>Contato</h5>
+          <div class="ftr-ci"><i class="bi bi-geo-alt-fill"></i> Santa Catarina, Brasil</div>
+          <div class="ftr-ci"><i class="bi bi-whatsapp"></i> (47) 99159-7258</div>
+          <div class="ftr-ci"><i class="bi bi-envelope-fill"></i> brunomariano.sv@gmail.com</div>
         </div>
-
       </div>
-      <hr class="border-white opacity-10">
-      <div class="text-center text-white-50 pt-4">
-        <p class="small mb-0">&copy; 2026 Bruno Mariano Silva. Todos os direitos reservados.</p>
-      </div>
+      <div class="ftr-bot">&copy; 2026 Bruno Mariano Silva — Todos os direitos reservados.</div>
     </div>
   </footer>
 
-  <!-- Botão Voltar ao Topo -->
-  <button id="scrollTopBtn" class="scroll-top-btn" title="Voltar para o topo" aria-label="Voltar ao topo">
-    <i class="bi bi-arrow-up"></i>
+  <button class="st-btn" id="stBtn" aria-label="Topo"><i class="bi bi-arrow-up"></i></button>
+
+  <button class="cb-tog" id="cbTog" aria-label="Assistente">
+    <i class="bi bi-chat-left-dots-fill"></i>
+    <span class="cb-badge">1</span>
   </button>
 
-  <!-- Chatbot Widget -->
-  <div id="chatbotWidget" class="chatbot-widget" role="dialog" aria-label="Assistente de Vendas">
-    <div class="chatbot-header">
-      <div>
-        <h6 class="mb-0 fw-bold">Assistente de Vendas</h6>
-        <small class="text-white opacity-75 d-block mt-1">Responderemos em breve</small>
-      </div>
-      <button class="btn-close btn-close-white" id="closeChatbot" aria-label="Fechar"></button>
+  <div class="cb-box" id="cbBox" role="dialog">
+    <div class="cb-hd">
+      <div><h6>Assistente de Vendas</h6><small>Responderemos em breve</small></div>
+      <button class="cb-x" id="cbX"><i class="bi bi-x-lg"></i></button>
     </div>
-    <div class="chatbot-body" id="chatbotBody">
-      <div class="chat-message bot-message">
-        <div class="message-content">
-          <p>Olá! Bem-vindo. Qual serviço você tem interesse?</p>
-        </div>
-      </div>
-    </div>
-    <div class="chatbot-footer" id="chatbotFooter"></div>
+    <div class="cb-bd"><div class="cb-msg">Olá! 👋 Qual serviço você tem interesse?</div></div>
+    <div class="cb-ft" id="cbFt"></div>
   </div>
 
-  <!-- Botão Chatbot Flutuante -->
-  <button id="chatbotToggle" class="chatbot-toggle" title="Abrir assistente" aria-label="Abrir assistente de vendas">
-    <i class="bi bi-chat-left-dots-fill"></i>
-    <span class="badge-pulse">1</span>
-  </button>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('.header-sticky');
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-
-    window.addEventListener('scroll', () => {
-      let current = '';
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.nav-link');
-      const headerHeight = document.querySelector('.header-sticky').offsetHeight;
-
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - headerHeight - 10) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') && link.getAttribute('href').includes(current)) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
 </body>
 </html>
