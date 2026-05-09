@@ -94,3 +94,20 @@ function sendForm(e) {
   window.open(`https://wa.me/5547991597258?text=${encodeURIComponent(`Olá Bruno! Sou ${n}.\n\nAssunto: ${s}\n\n${m}`)}`, '_blank');
 }
 
+// fallback para abrir links do Instagram (evita bloqueios/interruptores de click)
+document.querySelectorAll('a[href*="instagram.com"]').forEach(a => {
+  a.addEventListener('click', function (e) {
+    if (e.defaultPrevented) return;
+    // permitir clique com teclas modificadoras (abrir nova aba manualmente)
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+    e.preventDefault();
+    const href = this.href;
+    try {
+      window.open(href, '_blank', 'noopener');
+    } catch (err) {
+      // fallback simples
+      window.location.href = href;
+    }
+  });
+});
+
