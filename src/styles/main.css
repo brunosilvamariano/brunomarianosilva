@@ -1,0 +1,9 @@
+/* A ordem mantém a base compartilhada antes das seções e estados globais. */
+@import './base.css';
+@import './sections/header.css';
+@import './sections/hero.css';
+@import './sections/about.css';
+@import './sections/portfolio.css';
+@import './sections/services.css';
+@import './sections/footer.css';
+@import './motion.css';

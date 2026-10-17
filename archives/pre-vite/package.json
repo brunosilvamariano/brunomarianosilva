@@ -1,0 +1,14 @@
+{
+  "name": "bruno-mariano-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portfólio de Bruno Mariano Silva — site estático com ferramentas Node.js.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dist"
+  },
+  "engines": { "node": ">=20" }
+}
