@@ -340,8 +340,6 @@
 }
 .hero-portrait {
   animation: none !important;
-  translate: 0 var(--portrait-scroll, 0px);
-  will-change: translate;
 }
 .hero h1 {
   overflow: hidden;
@@ -436,16 +434,16 @@
 }
 @media (max-width: 767px) {
   .hero-portrait {
-    translate: none;
+    order: 4;
+    margin-top: 24px;
+    height: auto;
+    aspect-ratio: 1;
   }
   .hero-intro > p {
     animation-delay: 0.2s;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hero-portrait {
-    translate: none;
-  }
   .hero-letter {
     opacity: 1;
     transform: none;

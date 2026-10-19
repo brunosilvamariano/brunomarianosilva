@@ -185,8 +185,8 @@
         ]
       }
     </script>
-    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/favicon.ico?v=3" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <link
       rel="preload"
@@ -258,9 +258,9 @@
           <div class="hero-content">
             <div class="hero-stats" role="group" aria-label="Destaques do trabalho">
               <div>
-                <span class="stat-value" data-counter="01" aria-label="1 projeto publicado"
-                  ><span class="counter-number" aria-hidden="true">01</span></span
-                ><span class="stat-caption">Projeto publicado</span>
+                <span class="stat-value" data-counter="02" aria-label="2 projetos publicados"
+                  ><span class="counter-number" aria-hidden="true">02</span></span
+                ><span class="stat-caption">Projetos publicados</span>
               </div>
               <div>
                 <span class="stat-value" data-counter="100" aria-label="100 por cento"
@@ -397,7 +397,7 @@
           tabindex="0"
           role="region"
           aria-roledescription="carrossel"
-          aria-label="Trabalho publicado e próximos projetos — use as setas ou pause a animação"
+          aria-label="Trabalhos publicados e próximos projetos — use as setas ou pause a animação"
         >
           <article class="project">
             <a
@@ -437,21 +437,44 @@
               organizados e acesso ao WhatsApp para facilitar pedidos de orçamento.
             </p>
           </article>
-          <article class="project project-pending">
-            <div
-              class="project-image project-coming"
-              role="img"
-              aria-label="Próximo trabalho: em breve"
+          <article class="project">
+            <a
+              class="project-image project-image-bizpeek"
+              href="https://leedsnew.vercel.app/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Conhecer a plataforma BizPeek — tela de entrada"
             >
-              <span class="coming-kicker">PRÓXIMOS CAPÍTULOS <i>/02</i></span
-              ><span class="coming-symbol" aria-hidden="true">✳</span
-              ><span class="coming-label">Em breve<span>Novas ideias ganhando forma.</span></span>
-            </div>
+              <span class="case-badge">Plataforma web ↗</span>
+              <div class="project-browser">
+                <div class="project-browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>leedsnew.vercel.app</span><b>↗</b>
+                </div>
+                <img
+                  src="/images/projects/bizpeek.webp"
+                  alt="Tela de entrada do BizPeek, plataforma de prospecção e gestão comercial"
+                  width="1280"
+                  height="720"
+                  loading="lazy"
+                />
+              </div>
+              <span class="project-open" aria-hidden="true">↗</span>
+            </a>
             <div class="project-caption">
-              <h3>Em breve</h3>
-              <span>Landing page</span>
+              <h3>
+                <a
+                  href="https://leedsnew.vercel.app/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >BizPeek</a
+                >
+              </h3>
+              <span>Plataforma web</span>
             </div>
-            <p class="project-description">Espaço reservado para um próximo trabalho.</p>
+            <p class="project-description">
+              Plataforma de prospecção e gestão comercial com acesso por conta. Conheça a
+              apresentação e a tela de entrada do workspace.
+            </p>
           </article>
           <article class="project project-pending">
             <div
@@ -535,7 +558,7 @@
           </article>
         </div>
         <div class="container portfolio-bottom">
-          <span>Fritz publicado. Novos projetos em breve.</span
+          <span>Fritz e BizPeek publicados. Novos projetos em breve.</span
           ><span class="project-position" aria-label="Posição no portfólio">01 / 07</span>
         </div>
       </section>

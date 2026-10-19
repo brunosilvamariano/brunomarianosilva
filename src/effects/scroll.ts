@@ -14,8 +14,6 @@ export function initScrollEffects(motion: MotionState): void {
       const rootStyle = document.documentElement.style;
       rootStyle.setProperty('--reading', String(total ? y / total : 0));
       header.classList.toggle('scrolled', y > 15);
-      const offset = motion.canAnimate() && innerWidth > 767 ? -Math.min(90, y * 0.12) : 0;
-      rootStyle.setProperty('--portrait-scroll', `${offset}px`);
       const progress = Math.max(
         0,
         Math.min(

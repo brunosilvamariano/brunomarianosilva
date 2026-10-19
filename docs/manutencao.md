@@ -13,7 +13,9 @@ Preços e escopos ficam nos cards de serviços. Ao mudar parcelas, atualize o in
 - Hero: `public/images/portraits/bruno-hero.webp`.
 - Sobre: `public/images/portraits/bruno-about.webp`, com transparência.
 - Fritz: `public/images/projects/fritz.webp`.
-- Marca e favicons: `public/icons/`.
+- BizPeek: `public/images/projects/bizpeek.webp`, captura da tela pública de entrada.
+- Marca e ícone Apple: `public/icons/`.
+- Favicons: `public/favicon.svg` e `public/favicon.ico`.
 - Fotografias originais: `assets/originals/portraits/`.
 
 Use WebP para fotografias, SVG para a marca e PNG nos favicons compatíveis. Ao trocar uma imagem, atualize texto alternativo, dimensões e o preload quando aplicável. O retrato do hero tem prioridade de carregamento; imagens das seções seguintes usam carregamento adiado.
@@ -35,4 +37,4 @@ Confira desktop e celular, menu por teclado, navegação entre seções, carross
 
 ## Imagens atualizadas
 
-O hero usa a foto de camisa branca enviada em hero.webp, com tratamento do recorte e fundo transparente. O original foi preservado em assets/originals/portraits/hero-white-shirt.webp; a versão anterior está em archives/refactor/hero-before-white-shirt.webp. A ilustração do Sobre fica em public/images/illustrations/digital-solutions.webp e representa sites responsivos e sistemas. O retrato central do Sobre foi mantido.
+O hero usa a foto de camisa branca enviada em hero.webp, com tratamento do recorte e fundo transparente. O original foi preservado em assets/originals/portraits/hero-white-shirt.webp; a versão anterior foi retirada da pasta do projeto na limpeza de arquivos antigos. A ilustração do Sobre fica em public/images/illustrations/digital-solutions.webp e representa sites responsivos e sistemas. O retrato central do Sobre foi mantido.

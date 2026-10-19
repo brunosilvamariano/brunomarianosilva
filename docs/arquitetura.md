@@ -22,8 +22,8 @@ Os nomes de arquivos usam palavras em inglês, minúsculas e hífens quando nece
 - Imagens informativas têm texto alternativo; ícones, letras animadas e cópias decorativas são ocultos de leitores de tela.
 - O carrossel tem nome, botões, navegação por setas e pausa. O contador automático não usa região viva para evitar anúncios constantes.
 
-## Recursos e histórico
+## Recursos e originais
 
-Somente arquivos ativos ficam em `public/`. Fotografias originais ficam em `assets/originals/`. Implementações e materiais anteriores ficam em `archives/`, fora do bundle. Não use essas pastas como origem de recursos da página.
+Somente arquivos ativos ficam em `public/`. Fotografias originais ficam em `assets/originals/` e não entram no build. As cópias de HTML, CSS, JavaScript e materiais antigos foram removidas do projeto em 19/10/2026. O HTML da raiz é a única entrada editável; o HTML de `dist/` é gerado pelo Vite.
 
-`archives/refactor/` preserva o CSS e os módulos de antes desta organização. `archives/pre-vite/` guarda a versão anterior ao Vite. `archives/previous-materials/` contém imagens e marcas antigas.
+O favicon vetorial fica em `public/favicon.svg`; `public/favicon.ico` oferece compatibilidade com navegadores e buscas que consultam esse caminho padrão. São formatos complementares.

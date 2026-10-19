@@ -7,7 +7,7 @@ export interface MotionState {
   onChange(listener: () => void): void;
 }
 
-/** Preferência compartilhada por portfólio, parallax, ponteiro e rodapé. */
+/** Preferência compartilhada por portfólio, efeitos de rolagem, ponteiro e rodapé. */
 export function createMotionState(): MotionState {
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');

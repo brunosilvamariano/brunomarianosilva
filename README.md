@@ -42,7 +42,7 @@ src/
     portfolio.ts                 Carrossel, botões, arraste e pausa
   effects/
     reveal.ts                    Entrada das seções na tela
-    scroll.ts                    Progresso e parallax
+    scroll.ts                    Progresso e resposta à rolagem
     pointer.ts                   Resposta ao ponteiro e inclinação
   shared/
     dom.ts                       Seletores tipados
@@ -60,13 +60,14 @@ src/
       footer.css                 Contatos e assinatura
 public/
   fonts/                         Fontes Inter Display e licença
-  icons/                         Marca e favicons
+  icons/                         Marca e ícone Apple
   images/
     portraits/                   Retratos otimizados usados no site
     projects/                    Capturas de projetos publicados
+  favicon.svg                    Favicon vetorial
+  favicon.ico                    Fallback de favicon 16, 32 e 48 px
   robots.txt
 assets/originals/portraits/       Fotografias originais para futuras edições
-archives/                        Versões anteriores e materiais fora de uso
 docs/                            Arquitetura, manutenção e decisões
 .editorconfig                    Padrão básico para editores
 .prettierrc.json                  Formatação de código
@@ -76,13 +77,13 @@ package.json                     Scripts e dependências
 package-lock.json                Versões reproduzíveis
 ```
 
-Os estilos de cada seção incluem seus breakpoints e estados de interação. Os recursos em `public/` mantêm suas URLs no build. Originais e arquivos em `archives/` ficam fora da publicação.
+Os estilos de cada seção incluem seus breakpoints e estados de interação. Os recursos em `public/` mantêm suas URLs no build. As fotos originais ficam fora da publicação. As cópias da implementação anterior foram retiradas do projeto.
 
 ## Manutenção
 
 Consulte [o guia de manutenção](docs/manutencao.md) para editar textos, imagens, preços e interações. [A arquitetura](docs/arquitetura.md) explica a divisão de responsabilidades e a semântica.
 
-O único projeto publicado no portfólio é a [Fritz Higienização](https://higienizacaofritz.com.br/). Os demais espaços exibem “Em breve”. Os valores e escopos estão no HTML; a pesquisa que orientou a precificação está em [docs/pesquisa-de-precos.md](docs/pesquisa-de-precos.md).
+Os projetos publicados no portfólio são [Fritz Higienização](https://higienizacaofritz.com.br/) e [BizPeek](https://leedsnew.vercel.app/login), plataforma de prospecção e gestão comercial. Os cinco espaços restantes exibem “Em breve”. A captura do BizPeek mostra somente a tela pública de entrada, sem dados de usuários. Os valores e escopos estão no HTML; a pesquisa que orientou a precificação está em [docs/pesquisa-de-precos.md](docs/pesquisa-de-precos.md).
 
 Os contatos são WhatsApp `5547991597258`, Instagram `brunomarianoweb`, GitHub `brunosilvamariano` e LinkedIn de Bruno Mariano. Os links de WhatsApp apenas abrem a conversa.
 
