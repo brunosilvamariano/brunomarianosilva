@@ -798,44 +798,246 @@ footer .socials {
 }
 
 /* Acabamento compartilhado da paleta cobalto. */
-.button, .filters button, .socials a {
+.button,
+.filters button,
+.socials a {
   border-radius: 6px;
-  transition: background-color .2s ease, border-color .2s ease, color .2s ease, box-shadow .2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
 }
-.button:hover { box-shadow: 0 5px 16px rgb(36 84 214 / 14%); }
-.price-card { border-radius: 10px; transition: border-color .2s ease, box-shadow .2s ease; }
-.price-card:hover { border-color: #a8bdec; box-shadow: 0 8px 26px rgb(32 47 75 / 5%); }
-.price-card.featured { box-shadow: inset 0 3px 0 var(--accent); }
-.project-image { border-radius: 8px; }
-.project-label, .fact, .service-icon { border-radius: 6px; }
-input, textarea, select { border-radius: 6px; transition: border-color .2s ease, box-shadow .2s ease; }
-input:hover, textarea:hover, select:hover { border-color: #a8bdec; }
-input:focus, textarea:focus, select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgb(36 84 214 / 10%); outline: none; }
-.profile-nav a:hover, .contact-links a:hover { color: #1b3fa8; text-decoration: underline; text-underline-offset: 5px; }
-@media (prefers-reduced-motion: reduce) { .button, .filters button, .socials a, .price-card, input, textarea, select { transition: none; } }
-.socials a svg { width: 21px; height: 21px; display: block; }
-.socials a { border: 1px solid transparent; }
-.socials a:hover { border-color: #c4d3f5; }
-.service-field { min-width: 0; font-size: 14px; color: var(--ink); }
-.service-field > span { display: block; margin-bottom: 7px; }
-.service-picker summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 13px 14px; min-height: 56px; background: #fafbff; border: 1px solid #d8e0ef; border-radius: 6px; font-size: 16px; cursor: pointer; }
-.service-picker summary::-webkit-details-marker { display: none; }
-.service-picker summary svg { color: var(--accent); flex-shrink: 0; }
-.service-picker[open] summary { border-color: var(--accent); box-shadow: 0 0 0 3px rgb(36 84 214 / 10%); }
-.service-picker[open] summary svg { transform: rotate(180deg); }
-.service-options { margin-top: 8px; padding: 7px; border: 1px solid #d8e0ef; border-radius: 8px; background: #fff; max-height: 290px; overflow-y: auto; box-shadow: 0 5px 18px rgb(32 47 75 / 6%); }
-.service-options label { position: relative; flex-direction: row; align-items: center; padding: 11px 12px; gap: 12px; border-radius: 5px; min-height: 44px; cursor: pointer; }
-.service-options label:hover, .service-options label:focus-within { background: #edf3ff; }
-.service-options label:has(input:checked) { background: #e5edff; color: #1b3fa8; }
-.service-options input { width: 17px; height: 17px; margin: 0; padding: 0; accent-color: var(--accent); flex-shrink: 0; }
+.button:hover {
+  box-shadow: 0 5px 16px rgb(36 84 214 / 14%);
+}
+.price-card {
+  border-radius: 10px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.price-card:hover {
+  border-color: #a8bdec;
+  box-shadow: 0 8px 26px rgb(32 47 75 / 5%);
+}
+.price-card.featured {
+  box-shadow: inset 0 3px 0 var(--accent);
+}
+.project-image {
+  border-radius: 8px;
+}
+.project-label,
+.fact,
+.service-icon {
+  border-radius: 6px;
+}
+input,
+textarea,
+select {
+  border-radius: 6px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: #a8bdec;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgb(36 84 214 / 10%);
+  outline: none;
+}
+.profile-nav a:hover,
+.contact-links a:hover {
+  color: #1b3fa8;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .filters button,
+  .socials a,
+  .price-card,
+  input,
+  textarea,
+  select {
+    transition: none;
+  }
+}
+.socials a svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+.socials a {
+  border: 1px solid transparent;
+}
+.socials a:hover {
+  border-color: #c4d3f5;
+}
+.service-field {
+  min-width: 0;
+  font-size: 14px;
+  color: var(--ink);
+}
+.service-field > span {
+  display: block;
+  margin-bottom: 7px;
+}
+.service-picker summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 13px 14px;
+  min-height: 56px;
+  background: #fafbff;
+  border: 1px solid #d8e0ef;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.service-picker summary::-webkit-details-marker {
+  display: none;
+}
+.service-picker summary svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.service-picker[open] summary {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgb(36 84 214 / 10%);
+}
+.service-picker[open] summary svg {
+  transform: rotate(180deg);
+}
+.service-options {
+  margin-top: 8px;
+  padding: 7px;
+  border: 1px solid #d8e0ef;
+  border-radius: 8px;
+  background: #fff;
+  max-height: 290px;
+  overflow-y: auto;
+  box-shadow: 0 5px 18px rgb(32 47 75 / 6%);
+}
+.service-options label {
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  padding: 11px 12px;
+  gap: 12px;
+  border-radius: 5px;
+  min-height: 44px;
+  cursor: pointer;
+}
+.service-options label:hover,
+.service-options label:focus-within {
+  background: #edf3ff;
+}
+.service-options label:has(input:checked) {
+  background: #e5edff;
+  color: #1b3fa8;
+}
+.service-options input {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  padding: 0;
+  accent-color: var(--accent);
+  flex-shrink: 0;
+}
 
-.profile h1 { display: flex; align-items: center; justify-content: center; gap: 10px; }
-.profile-logo { width: 40px; height: 40px; flex: 0 0 40px; object-fit: contain; }
+.profile h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.profile-logo {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  object-fit: contain;
+}
 @media (min-width: 768px) and (max-width: 1100px) {
-  .profile-logo { width: 34px; height: 34px; flex-basis: 34px; }
-  .profile h1 { gap: 8px; }
+  .profile-logo {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+  }
+  .profile h1 {
+    gap: 8px;
+  }
 }
 @media (max-width: 360px) {
-  .profile h1 { font-size: 29px; gap: 8px; }
-  .profile-logo { width: 34px; height: 34px; flex-basis: 34px; }
+  .profile h1 {
+    font-size: 29px;
+    gap: 8px;
+  }
+  .profile-logo {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+  }
+}
+
+.profile-nav a[aria-current='page'] {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.whatsapp-float {
+  position: fixed;
+  right: max(24px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 14px 19px;
+  border: 1px solid rgb(255 255 255 / 25%);
+  border-radius: 28px;
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 6px 24px rgb(36 84 214 / 25%);
+  font-size: 14px;
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.whatsapp-float svg {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+}
+.whatsapp-float:hover {
+  background: #1b3fa8;
+  color: #fff;
+  box-shadow: 0 8px 28px rgb(36 84 214 / 32%);
+}
+footer {
+  padding-bottom: 100px;
+}
+@media (max-width: 767px) {
+  .whatsapp-float {
+    right: max(18px, env(safe-area-inset-right));
+    bottom: max(18px, env(safe-area-inset-bottom));
+    width: 56px;
+    height: 56px;
+    padding: 14px;
+  }
+  .whatsapp-float span {
+    display: none;
+  }
 }

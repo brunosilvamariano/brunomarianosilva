@@ -16,8 +16,8 @@ O build estático fica em `dist/`. `npm run typecheck` verifica os tipos. Os com
 
 ## Conteúdo e manutenção
 
-- `index.html`: conteúdo, metadados, projetos, preços, contatos e formulário.
-- `src/main.ts`: filtros dos projetos e preparação da mensagem para WhatsApp.
+- `index.html`: página inicial com serviços, valores e portfólio.
+- `src/main.ts`: filtros dos projetos e ano do rodapé.
 - `src/styles/main.css`: tema claro e regras responsivas.
 - `public/images/projects/`: imagens dos seis projetos, incluindo capturas locais já fornecidas nos Downloads.
 
@@ -25,6 +25,8 @@ Projetos: FAP Contabilidade, Novo Sites, ZenatoCell, BizPeek, Fritz Higienizaç�
 
 Valores atualizados em 20/11/2026: landing page R$ 1.500 (4 × R$ 375); site institucional R$ 2.500 (5 × R$ 500); consultoria R$ 600 por sessão de até 90 minutos; manutenção R$ 250/mês. Sistemas seguem com orçamento personalizado. Os valores foram reajustados a pedido do titular e não representam pesquisa atual de mercado.
 
-O formulário valida os campos e prepara uma conversa no WhatsApp; o visitante confirma o envio no aplicativo. Não há envio automático nem armazenamento dos dados. Contatos e metadados existentes foram preservados. Os módulos e estilos anteriores em `src/features`, `src/effects` e `src/styles/sections` não são carregados pela nova página.
+O contato ocorre pelos links de WhatsApp e e-mail e pelo CTA flutuante. A página inicial contém somente serviços, valores e portfólio. Os módulos e estilos anteriores em `src/features`, `src/effects` e `src/styles/sections` não são carregados pela página.
 
 Verificação: build TypeScript/Vite, carregamento de imagens, filtro de sistemas, seis projetos e ausência de transbordamento horizontal em desktop e viewport de 390px. Captura do desktop em `docs/portfolio-desktop.jpg`.
+
+A página inclui um CTA flutuante de WhatsApp em azul cobalto. O build gera somente a entrada `index.html`.
